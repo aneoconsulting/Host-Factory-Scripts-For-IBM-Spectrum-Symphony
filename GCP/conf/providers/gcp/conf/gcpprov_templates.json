@@ -1,0 +1,20 @@
+{
+    "templates": [
+        {
+            "templateID": "compute",
+            "maxNumber": 3,
+            "attributes": {
+                "type": ["String", "X86_64"],
+                "ncores": ["Numeric", "1"],
+                "ncpus": ["Numeric", "1"],
+                "nram": ["Numeric", "1024"]
+            },
+            "imageId": "ami-b63769a1",
+            "subnetId": "subnet-d694eca0",
+            "vmType": "t2.micro",
+            "keyName": "Sym-Key",
+            "securityGroupIds": ["sg-4ae4d432"],
+            "userDataScript": "C:\\scripts\\post_install.sh"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "providers":[
+        {
+            "name": "aws",
+            "enabled": 1,
+            "confPath": "${HF_CONFDIR}\\providers\\aws\\conf\\",
+            "scriptPath": "${HF_TOP}\\providers\\aws\\scripts\\"
+        },
+        {
+            "name": "ibmcloud",
+            "enabled": 1,
+            "confPath": "${HF_CONFDIR}\\providers\\softlayer\\conf\\",
+            "scriptPath": "${HF_TOP}\\providers\\softlayer\\scripts\\"
+        },
+        {
+            "name": "azure",
+            "enabled": 1,
+            "confPath": "${HF_CONFDIR}\\providers\\azure\\conf\\",
+            "scriptPath": "${HF_TOP}\\providers\\azure\\scripts\\"
+        },
+		{
+            "name": "gcp",
+            "enabled": 1,
+            "confPath": "${HF_CONFDIR}\\providers\\gcp\\conf\\",
+            "scriptPath": "${HF_TOP}\\providers\\gcp\\scripts\\"
+        }
+    ]
+}
