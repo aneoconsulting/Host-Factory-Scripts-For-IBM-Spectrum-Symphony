@@ -1,0 +1,23 @@
+{
+    "scaling_policy":[
+        {
+            "name": "throughput",
+            "description": "Throughput is the number of tasks executed per minutes per slot",
+            "warmup_time": 5,
+            "history_expiry_time": 60,
+            "active_task_moving_avg": 5,            
+            "desired_task_complete_duration": 10,
+            "max_cores_per_hour": 0,
+            "ego_host_startup_time": 5,
+            "ego_failover_timeout": 10
+        }
+    ],
+    "host_return_policy":[
+        {
+            "name": "lazy",
+            "description": "Return cloud hosts closer to the end of billing interval",
+            "billing_interval": 60,
+            "return_interval": 10
+        }        
+    ]
+}
